@@ -1,0 +1,123 @@
+{
+	"id": "e645f511-f5e8-4c8c-b4f9-5c71c497fc20",
+	"name": "API Testing Demo",
+	"timestamp": "2022-11-16T13:49:48.735Z",
+	"collection_id": "24426787-2f7086ba-f05a-447b-ad61-9a4ccb56a3c3",
+	"folder_id": 0,
+	"environment_id": "24426787-4bc45940-cee7-4b84-b0ca-e1a3bc52540e",
+	"totalPass": 5,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "44ba830f-05ae-43f0-8ebe-1d9712f23168",
+			"name": "TC1 : USER",
+			"url": "https://jsonplaceholder.typicode.com/users?Request=",
+			"time": 596,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				596
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "10d55aca-9b7a-4b22-945c-2d76233a280c",
+			"name": "TC2 : ID",
+			"url": "https://jsonplaceholder.typicode.com/users?GetRequestById=",
+			"time": 667,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Verify if user with id8 is Nicholas Runolfsdottir V": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify if user with id8 is Nicholas Runolfsdottir V": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				667
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Verify if user with id8 is Nicholas Runolfsdottir V": true
+				}
+			]
+		},
+		{
+			"id": "077b7880-1a03-4741-85d2-70c7ea77b3f9",
+			"name": "TC3 : POST USER",
+			"url": "https://jsonplaceholder.typicode.com/users?Request=",
+			"time": 707,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful POST request": true,
+				"Has Data": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has Data": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				707
+			],
+			"allTests": [
+				{
+					"Successful POST request": true,
+					"Has Data": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1970,
+	"collection": {
+		"requests": [
+			{
+				"id": "44ba830f-05ae-43f0-8ebe-1d9712f23168",
+				"method": "GET"
+			},
+			{
+				"id": "10d55aca-9b7a-4b22-945c-2d76233a280c",
+				"method": "GET"
+			},
+			{
+				"id": "077b7880-1a03-4741-85d2-70c7ea77b3f9",
+				"method": "POST"
+			}
+		]
+	}
+}
